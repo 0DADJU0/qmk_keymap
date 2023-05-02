@@ -29,7 +29,7 @@ jobs:
       with:
         path: users/${{ github.actor }}
 
-    - name: Build firmware
+    - name: weiwei40
       run: qmk compile "users/${{ github.actor }}/${{ matrix.file }}"
 
     - name: Archive firmware
