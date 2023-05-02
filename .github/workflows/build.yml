@@ -30,7 +30,7 @@ jobs:
         path: users/${{ github.actor }}
 
     - name: weiwei40
-      run: qmk compile "weiwei40"
+      run: qmk compile -kb weiwei40 -km default
 
     - name: Archive firmware
       uses: actions/upload-artifact@v3
